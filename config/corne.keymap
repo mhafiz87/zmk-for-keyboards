@@ -95,7 +95,7 @@
 &kp ESC   &kp Q           &kp W           &kp E        &kp R             &kp T      &kp Y  &kp U         &kp I        &kp O            &kp P               &kp BSPC
 &kp CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G      &kp H  &hm RSHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RGUI SEMICOLON  &kp SQT
 &kp DEL   &kp Z           &kp X           &kp C        &kp V             &kp B      &kp N  &kp M         &kp COMMA    &kp DOT          &kp QUESTION        &kp MINUS
-                                          &trans       &mo 2             &kp ENTER  &mo 1  &trans        &mo 3
+                                          &trans       &lt 2 SPACE       &kp ENTER  &mo 1  &mo 4         &mo 3
             >;
         };
 
@@ -110,10 +110,10 @@
 
         cursor {
             bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans              &kp BACKSPACE
-&trans   &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
-&kp DEL  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans              &trans
-                         &trans  &trans  &trans  &trans    &trans    &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
+&trans   &trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
+&kp DEL  &trans  &trans  &trans  &trans  &trans  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans              &trans
+                         &trans  &trans  &trans  &kp ENTER  &trans         &trans
             >;
         };
 
@@ -123,6 +123,15 @@
 &rgb_ug RGB_TOG                  &rgb_ug RGB_BRI                   &rgb_ug RGB_BRD  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
 &rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(28,100,50)  &trans           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                                                     &trans        &trans        &trans  &trans  &trans  &trans
+            >;
+        };
+
+        test {
+            bindings = <
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+                        &kp N1  &kp N2  &kp N3  &kp N1  &kp N2  &kp N3
             >;
         };
     };
