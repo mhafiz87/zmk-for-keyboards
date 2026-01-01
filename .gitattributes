@@ -1,0 +1,10 @@
+# Explicitly declare text files
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Mark specific files as binary to prevent conversions/diffs
+*.png binary
+*.jpg -text
+
