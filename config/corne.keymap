@@ -123,7 +123,7 @@
 &trans   &trans  &trans  &windows_taskbar  &trans  &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
 &trans   &trans  &trans  &trans            &trans  &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
 &kp DEL  &trans  &trans  &trans            &trans  &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
-                         &trans            &trans  &trans  &kp ENTER  &kp TAB        &trans
+                         &trans            &trans  &mo 5   &kp ENTER  &kp TAB        &trans
             >;
         };
 
