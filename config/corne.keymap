@@ -95,6 +95,13 @@
             bindings = <&kp LG(B) &kp LS(TAB)>;
             label = "WINDOWS_TASKBAR";
         };
+
+        rdp_toolbar: rdp_toolbar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(HOME)) &kp TAB>;
+            label = "RDP_TOOLBAR";
+        };
     };
 
     keymap {
@@ -120,10 +127,10 @@
 
         cursor {
             bindings = <
-&trans   &trans    &trans    &windows_taskbar  &trans     &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
-&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT  &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
-&kp DEL  &trans    &mo 5     &trans            &trans     &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
-                             &trans            &trans     &trans  &kp ENTER  &kp TAB        &trans
+&trans   &trans    &trans    &windows_taskbar  &rdp_toolbar  &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
+&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT     &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
+&kp DEL  &trans    &mo 5     &trans            &trans        &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
+                             &trans            &trans        &trans  &kp ENTER  &kp TAB        &trans
             >;
         };
 
@@ -147,10 +154,10 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans           &trans           &trans          &trans           &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &msc MOVE_X(-5)  &msc MOVE_Y(-5)  &msc MOVE_Y(5)  &msc MOVE_X(5)   &trans  &trans
-                            &trans     &trans     &trans  &mkp LCLK        &mkp RCLK        &mkp MCLK
+&trans  &trans    &trans    &trans     &trans     &trans  &trans            &trans            &trans           &trans           &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans  &trans
+                            &trans     &trans     &trans  &mkp LCLK         &mkp RCLK         &mkp MCLK
             >;
         };
     };
