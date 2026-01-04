@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -121,19 +120,19 @@
 
         cursor {
             bindings = <
-&trans   &trans    &trans        &windows_taskbar  &trans     &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
-&trans   &kp LGUI  &kp LALT      &kp LCTRL         &kp LSHFT  &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
-&kp DEL  &trans    &lt 5 ESCAPE  &trans            &trans     &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
-                                 &trans            &trans     &trans  &kp ENTER  &kp TAB        &trans
+&trans   &trans    &trans    &windows_taskbar  &trans     &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
+&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT  &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
+&kp DEL  &trans    &mo 5     &trans            &trans     &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
+                             &trans            &trans     &trans  &kp ENTER  &kp TAB        &trans
             >;
         };
 
         keyboard {
             bindings = <
-&bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&rgb_ug RGB_TOG                  &rgb_ug RGB_BRI                   &rgb_ug RGB_BRD  &bl BL_TOG    &trans        &trans  &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
-&rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(28,100,50)  &trans           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                                                    &trans        &trans        &trans  &trans  &trans  &trans
+&bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&rgb_ug RGB_TOG                  &rgb_ug RGB_BRI                   &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
+&rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(28,100,50)  &trans           &trans           &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                                                    &trans           &trans        &trans  &trans  &trans  &trans
             >;
         };
 
