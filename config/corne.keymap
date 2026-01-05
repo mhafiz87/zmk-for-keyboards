@@ -21,8 +21,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <180>;
-            global-quick-tap;
+            quick-tap-ms = <125>;
         };
 
         ltq: ltq {
