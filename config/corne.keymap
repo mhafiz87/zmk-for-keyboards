@@ -116,28 +116,28 @@
 
         numbers {
             bindings = <
-&trans      &kp GRAVE  &kp N7  &kp N8  &kp N9     &kp SLASH  &kp PIPE       &kp LEFT_BRACE                    &kp RIGHT_BRACE                      &kp LT                      &kp GT                       &kp BACKSPACE
-&trans      &kp COLON  &kp N4  &kp N5  &kp N6     &kp EQUAL  &kp BACKSLASH  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_CONTROL RIGHT_PARENTHESIS  &hm RIGHT_ALT LEFT_BRACKET  &hm RIGHT_GUI RIGHT_BRACKET  &trans
-&kp DELETE  &kp DOT    &kp N1  &kp N2  &kp N3     &kp MINUS  &trans         &kp MINUS                         &kp UNDER                            &kp HOME                    &kp END                      &trans
-                               &trans  &kp SPACE  &kp N0     &kp ENTER      &trans                            &trans
+&trans      &kp GRAVE  &kp N7  &kp N8   &kp N9     &kp SLASH  &kp PIPE       &kp LEFT_BRACE                    &kp RIGHT_BRACE                      &kp LT                      &kp GT                       &kp BACKSPACE
+&trans      &kp COLON  &kp N4  &kp N5   &kp N6     &kp EQUAL  &kp BACKSLASH  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_CONTROL RIGHT_PARENTHESIS  &hm RIGHT_ALT LEFT_BRACKET  &hm RIGHT_GUI RIGHT_BRACKET  &trans
+&kp DELETE  &kp DOT    &kp N1  &kp N2   &kp N3     &kp MINUS  &trans         &kp MINUS                         &kp UNDER                            &kp HOME                    &kp END                      &trans
+                               &kp TAB  &kp SPACE  &kp N0     &kp ENTER      &trans                            &trans
             >;
         };
 
         cursor {
             bindings = <
-&trans   &trans    &trans    &windows_taskbar  &rdp_toolbar  &trans  &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
-&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT     &trans  &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
-&kp DEL  &trans    &mo 5     &trans            &trans        &trans  &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
-                             &trans            &trans        &trans  &kp ENTER  &kp TAB        &trans
+&trans   &trans    &trans    &windows_taskbar  &rdp_toolbar  &trans   &trans     &trans         &trans        &trans     &trans              &kp BACKSPACE
+&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT     &trans   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp K_CONTEXT_MENU  &trans
+&kp DEL  &trans    &mo 5     &trans            &trans        &trans   &trans     &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME   &kp END             &trans
+                             &trans            &trans        &kp TAB  &kp ENTER  &kp TAB        &trans
             >;
         };
 
         keyboard {
             bindings = <
-&bt BT_CLR                       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &trans  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_MINIMUM  &trans  &bootloader
-&rgb_ug RGB_TOG                  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans        &trans  &trans                    &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp K_MUTE                &trans  &ext_power EP_TOG
-&rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans        &trans  &trans                    &trans                &trans                &trans                    &trans  &trans
-                                                                   &trans           &trans        &trans  &trans                    &trans                &trans
+&bt BT_CLR                       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &trans  &trans  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans      &trans  &bootloader
+&rgb_ug RGB_TOG                  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans        &trans  &trans  &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE  &trans  &ext_power EP_TOG
+&rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans        &trans  &trans  &trans                &trans                &trans      &trans  &trans
+                                                                   &trans           &trans        &trans  &trans  &trans                &trans
             >;
         };
 
@@ -152,10 +152,10 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &trans            &trans            &trans           &trans           &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans  &trans
-                            &trans     &trans     &trans  &mkp LCLK         &mkp RCLK         &mkp MCLK
+&trans  &trans    &trans    &trans     &trans     &trans   &trans            &trans            &trans           &trans           &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans   &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans   &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans  &trans
+                            &trans     &trans     &kp TAB  &mkp LCLK         &mkp RCLK         &mkp MCLK
             >;
         };
     };
