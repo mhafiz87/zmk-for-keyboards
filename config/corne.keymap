@@ -114,10 +114,10 @@
 
         cursors {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans    &trans    &windows_taskbar  &trans     &trans   &trans    &trans     &trans     &trans     &trans              &kp BSPC
+&trans   &kp LGUI  &kp LALT  &kp LCTRL         &kp LSHFT  &trans   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_CONTEXT_MENU  &trans
+&kp DEL  &trans    &mo 5     &trans            &trans     &trans   &trans    &kp PG_DN  &kp PG_UP  &kp HOME   &kp END             &trans
+                             &trans            &trans     &kp TAB  &kp RET   &kp TAB    &trans
             >;
         };
 
