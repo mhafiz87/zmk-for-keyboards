@@ -82,6 +82,15 @@
         };
     };
 
+    macros {
+        windows_taskbar: windows_taskbar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(B) &kp LS(TAB)>;
+            label = "WINDOWS_TASKBAR";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
