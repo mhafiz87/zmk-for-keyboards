@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     behaviors {
@@ -88,10 +87,55 @@
 
         default_layer {
             bindings = <
-&kp ESC   &kp Q           &kp W            &kp E        &kp R             &kp T   &kp Y   &kp U         &kp I        &kp O            &kp P               &kp BSPC
-&kp CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &kp H   &hm RSHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RGUI SEMICOLON  &kp SQT
-&kp DEL   &kp Z           &rgb_ug RGB_TOG  &kp C        &kp V             &kp B   &kp N   &kp M         &kp COMMA    &kp DOT          &kp FSLH            &kp MINUS
-                                           &trans       &trans            &trans  &trans  &trans        &trans
+&kp ESC   &kp Q           &kp W           &kp E        &kp R             &kp T      &kp Y    &kp U         &kp I        &kp O            &kp P               &kp BSPC
+&kp CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G      &kp H    &hm RSHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RGUI SEMICOLON  &kp SQT
+&kp DEL   &kp Z           &kp X           &kp C        &kp V             &kp B      &kp N    &kp M         &kp COMMA    &kp DOT          &kp QUESTION        &kp MINUS
+                                          &mo 3        &kp SPACE         &lt 2 TAB  &kp RET  &mo 1         &mo 4
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        cursors {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        keyboard {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        f_keys {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
