@@ -35,9 +35,9 @@
             quick-tap-ms = <400>;
         };
 
-        mtp: mod-tap {
+        mtp: mod-tap-new {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD-TAP";
+            label = "MOD-TAP-NEW";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
